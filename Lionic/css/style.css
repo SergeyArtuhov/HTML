@@ -105,23 +105,24 @@ body {
   background-color: #fff;
 }
 
-.header-link {
+.nav__link {
   position: relative;
   font-weight: 600;
   color: #1c1c1c;
   font-size: 15px;
+  transition: color 0.3s ease-in-out;
 }
 
-.header-link:focus {
+.nav__link:focus {
   outline-offset: 2px;
-  outline: 1px solid #71a7e2;
+  outline: 4px solid #71a7e2;
 }
 
-.header-link:hover {
+.nav__link:hover {
   color: #71a7e2;
 }
 
-.header-link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -130,30 +131,31 @@ body {
   height: 2px;
   background-color: #3474ba;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.header-link:active {
+.nav__link:active {
   color: #3172b9;
   outline: none;
 }
 
-.header-link:active::after {
+.nav__link:active::after {
   opacity: 1;
 }
 
-.header-container {
+.header__container {
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   margin-right: auto;
 }
 
-.header-nav {
+.header__nav {
   margin-right: 52px;
 }
 
-.header-list-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 52px;
 }
 
@@ -167,6 +169,7 @@ body {
   background-color: #3172b9;
   color: #fff;
   border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn::after {
@@ -180,6 +183,7 @@ body {
   border: 1px solid #3172b9;
   outline: none;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .btn:focus::after {
@@ -276,6 +280,7 @@ body {
   width: 270px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .services-item:not(:nth-child(4n)) {
@@ -290,6 +295,7 @@ body {
 .services-item-icon {
   margin-bottom: 25px;
   fill: #3172b9;
+  transition: fill 0.3s ease-in-out;
 }
 
 .services-item:hover .services-item-icon {
@@ -316,6 +322,7 @@ body {
   font-size: 14px;
   line-height: 150%;
   color: #787878;
+  transition: color 0.3s ease-in-out;
 }
 
 .services-item:hover .services-item-descr {
@@ -351,6 +358,7 @@ body {
   display: flex;
   position: relative;
   width: 100%;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .blog-preview-link:focus {
@@ -416,6 +424,7 @@ body {
   font-size: 10px;
   line-height: 150%;
   color: #787878;
+  transition: color 0.3s ease-in-out;
 }
 
 .blog-preview-title {
@@ -425,6 +434,7 @@ body {
   font-size: 20px;
   line-height: 130%;
   color: #1C1C1C;
+  transition: color 0.3s ease-in-out;
 }
 
 .blog-preview-descr {
@@ -434,6 +444,7 @@ body {
   font-size: 14px;
   line-height: 150%;
   color: #787878;
+  transition: color 0.3s ease-in-out;
 }
 
 /* clients */
@@ -543,6 +554,7 @@ body {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
+  transition: color 0.3s ease-in-out;
 }
 
 .contacts-item-link:focus {
@@ -626,6 +638,7 @@ body {
 
 .social-link svg {
   fill: #000;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
 }
 
 .social-link-mail svg {
@@ -683,6 +696,7 @@ body {
   padding: 16px 28px;
   width: 251px;
   height: 60px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .form-input:focus {
@@ -706,6 +720,7 @@ body {
   padding: 16px 28px;
   width: 251px;
   height: 60px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .form-select:focus {
@@ -730,6 +745,7 @@ body {
   box-sizing: border-box;
   resize: none;
   height: 100%;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .form-textarea:focus {
